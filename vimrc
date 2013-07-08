@@ -23,11 +23,13 @@ nnoremap <leader>ets :sp ~/Documents/txt/toolsharpening.txt<cr>
 nnoremap <leader>evr :sp $MYVIMRC<cr>
 nnoremap <leader>t :CommandT<cr>
 nnoremap <leader>nt :NERDTree<cr>
-nnoremap <leader>rr :! ruby %<cr>
+nnoremap <leader>rr :w<cr>:! ruby %<cr>
 
 if exists(":Tabularize")
   nmap <Leader>a= :Tabularize /=<CR>
   vmap <Leader>a= :Tabularize /=<CR>
+  nmap <Leader>a" :Tabularize /"\zs<CR>
+  vmap <Leader>a" :Tabularize /"\zs<CR>
   nmap <Leader>a: :Tabularize /:\zs<CR>
   vmap <Leader>a: :Tabularize /:\zs<CR>
 endif
