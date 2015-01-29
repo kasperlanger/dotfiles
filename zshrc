@@ -15,3 +15,4 @@ export EDITOR=vim
 alias vp="vagrant provision"
 alias vu="vagrant up"
 alias vs="vagrant ssh"
+alias e=vim
