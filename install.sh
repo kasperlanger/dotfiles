@@ -1,7 +1,7 @@
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 chsh -s /bin/zsh
 
-for file in tmux.conf vimrc gitconfigi zshrc; do
+for file in ctags tmux.conf vimrc gitconfigi zshrc; do
   ln -sf "$(pwd)/$file" ~/.$file
 done
 
