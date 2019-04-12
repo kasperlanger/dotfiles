@@ -5,8 +5,6 @@ call pathogen#infect()
 
 syntax on
 set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
 filetype plugin indent on
 
 set number
@@ -79,6 +77,10 @@ if exists(":Tabularize")
 endif
 
 autocmd bufwritepost $MYVIMRC :so $MYVIMRC
+autocmd FileType groovy setlocal shiftwidth=4 softtabstop=4 expandtab
+autocmd BufNewFile,BufRead *Jenkinsfile setf groovy
+autocmd BufNewFile,BufRead *.boot setf clojure
+
 
 "Styling
 hi CursorLine term=bold cterm=bold guibg=Grey40
